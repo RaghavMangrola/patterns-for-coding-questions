@@ -1,7 +1,7 @@
 const max_sum_subarray_of_size_k = function(k, arr) {
   let windowStart = 0
-  var output = 0
-  var currentSum = 0
+  let output = 0
+  let currentSum = 0
   for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
 
     currentSum += arr[windowEnd]
@@ -11,7 +11,7 @@ const max_sum_subarray_of_size_k = function(k, arr) {
       output = Math.max(output, currentSum)
 
       currentSum -= arr[windowStart]
-      windowStart += 1
+      windowStart++
     }
   }
   return output
