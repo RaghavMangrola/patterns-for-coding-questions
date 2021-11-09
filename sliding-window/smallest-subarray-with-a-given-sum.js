@@ -9,7 +9,6 @@ const smallest_subarray_with_given_sum = function(s, arr) {
 
         while (windowSum >= s) {
             minLength = Math.min(minLength, windowEnd - windowStart + 1)
-            console.log('minLength', minLength)
             windowSum -= arr[windowStart]
             windowStart += 1
         }        
