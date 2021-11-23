@@ -12,8 +12,6 @@ const longest_substring_with_k_distinct = function(str, k) {
         }
         charFrequency[rightChar] += 1
 
-        console.log('charFrequency', charFrequency)
-
         while (Object.keys(charFrequency).length > k) {
             const leftChar = str[windowStart]
             charFrequency[leftChar] -= 1
