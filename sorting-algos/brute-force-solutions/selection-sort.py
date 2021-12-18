@@ -7,10 +7,12 @@ def selection_sort(arr):
         print("min_value: " + str(min_value))
         print("min_index: " + str(min_index))
         for j in range(i + 1, len(arr)):
-            print("Comparing arr[" + str(j) + "] " + str(arr[j]) + " with current min_value: " + str(min_value))
+            # print("Comparing arr[" + str(j) + "] " + str(arr[j]) + " with current min_value: " + str(min_value))
             if arr[j] < min_value:
                 min_value = arr[j]
+                print("new min_value: " + str(min_value))
                 min_index = j
+        print("Swapping " + str(arr[i]) + " with " + str(arr[min_index]))
         arr[i], arr[min_index] = arr[min_index], arr[i]
         print("Array: " + str(arr))
         print("")
