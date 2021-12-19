@@ -19,6 +19,7 @@ def helper_lomuto_partitioning(arr, start, end):
     for bigger in range(start + 1, end + 1):
         print("Array: {}".format(arr))
         print("Bigger Index: {}".format(bigger))
+        print("Comparing Bigger value: {} with start value: {}".format(arr[bigger], arr[start]))
         if arr[bigger] < arr[start]:
             smaller += 1
             print("Smaller Index Incremented to: {}".format(smaller))
