@@ -14,3 +14,11 @@ def main():
     print(solve([1,2,3,4]))
 
 main()
+
+def helper(subproblem definition, partial solution ie slate):
+    #Base Case: Leaf Worker
+    if subproblem definition is empty:
+        add to global bag
+        return
+    # Recursive Case: Internal Node Workers
+    
