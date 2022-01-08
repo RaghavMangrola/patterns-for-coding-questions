@@ -13,7 +13,6 @@ class Solution {
     func helper(_ nums: inout [Int], i: Int, slate: inout [Int], result: inout [[Int]]) {
         if i == nums.count {
             result.append(slate)
-            // print("SLATE: \(String(describing: slate))")
             return
         }
 
