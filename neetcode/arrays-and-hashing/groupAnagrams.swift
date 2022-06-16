@@ -10,7 +10,7 @@ class Solution {
 
             var table = Array(repeating: 0, count: 26)
 
-            for c in str.unicodeScalars {
+            for character in str.unicodeScalars {
                 table[Int(c.value - aUnicode)] += 1
             }
 
